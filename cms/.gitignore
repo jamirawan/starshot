@@ -54,7 +54,10 @@
 /web/robots.txt
 /web/update.php
 /web/web.config
-
+/web/db
+/web/db.sqlite
+/web/db-shm
+/web/db-wal
 # Ignore vendor dependencies and scripts
 /vendor
 /composer.phar
