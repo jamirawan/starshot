@@ -1,0 +1,39 @@
+# Schema for the configuration files of the DatetimeMore module.
+
+field.widget.settings.datetime_more:
+  type: mapping
+  label: 'DatetimeMore select list display format settings'
+  mapping:
+    increment:
+      type: integer
+      label: 'Time increments'
+    date_order:
+      type: string
+      label: 'Date part order'
+    time_type:
+      type: string
+      label: 'Time type'
+    year_min:
+      type: integer
+      label: 'Year minimum'
+    year_max:
+      type: integer
+      label: 'Year maximum'
+    input_year:
+      type: string
+      label: 'Input type year'
+    input_month:
+      type: string
+      label: 'Input type month'
+    input_day:
+      type: string
+      label: 'Input type day'
+    input_hour:
+      type: string
+      label: 'Input type hour'
+    input_minute:
+      type: string
+      label: 'Input type minute'
+    input_second:
+      type: string
+      label: 'Input type second'

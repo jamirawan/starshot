@@ -1,0 +1,13 @@
+name: Datetime More Datelist Widget
+type: module
+description: 'Defines "Datelist more" widget for storing dates 1-9999 years and times with seconds.'
+package: Field types
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:field
+  - drupal:datetime
+
+# Information added by Drupal.org packaging script on 2024-03-12
+version: '1.0.2'
+project: 'datetime_more'
+datestamp: 1710270270

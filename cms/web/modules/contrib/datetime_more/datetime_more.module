@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Field hooks to implement a simple datetime field.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function datetime_more_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.datetime_more':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Defines "Datelist more" datetime widget for storing dates 1-9999 years and times with seconds.') . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Select "Datelist more" widget at the datetime field`s form-display settings.') . '</dt>';
+      $output .= '<dt>' . t('Set min year and max year.') . '</dt>';
+      $output .= '<dt>' . t('Select number field or select field for date or time fields.') . '</dt>';
+      $output .= '</dl>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_element_info().
+ */
+function datetime_more_element_info() {
+  $elements = [];
+
+  // Зарегистрируйте свой класс элемента формы.
+  $elements['datelist_more'] = [
+    'label' => t('Datelist More'),
+    'class' => '\Drupal\datetime_more\Element\DatelistMore',
+  ];
+
+  return $elements;
+}

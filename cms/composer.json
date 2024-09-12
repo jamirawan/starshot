@@ -136,11 +136,20 @@
     "require": {
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^2",
+        "drupal/civictheme": "^1.7",
+        "drupal/components": "^3.1",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
+        "drupal/datetime_more": "^1.0",
         "drupal/drupal_cms": "*",
         "drupal/drupal_cms_installer": "*",
+        "drupal/field_group": "^3.6",
+        "drupal/layout_builder_restrictions": "^2.20",
+        "drupal/menu_block": "^1.13",
+        "drupal/paragraphs": "^1.18",
+        "drupal/restui": "^1.22",
+        "drupal/time_range": "^9.0",
         "drush/drush": "^12.5"
     },
     "require-dev": {
@@ -151,7 +160,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
@@ -204,7 +213,8 @@
                 "#3464550: Create config action which can create an entity for every bundle of another entity type": "./patches/core/8975.patch",
                 "#3303127: Determine which core config entity methods should be config actions": "./patches/core/7940.patch",
                 "Ensure core recipes that affect user roles also install the User module": "./patches/core/core-recipes-user-import.patch",
-                "#3416357: Convert QueueFactory to use a service locator": "./patches/core/3416357-10.3.x-only.patch"
+                "#3416357: Convert QueueFactory to use a service locator": "./patches/core/3416357-10.3.x-only.patch",
+                "Layout builder cannot recover on missing layout - https://www.drupal.org/project/drupal/issues/3204271#comment-15151776": "https://www.drupal.org/files/issues/2023-07-16/3204271-20-missing-layout-exception.patch"
             }
         }
     },
