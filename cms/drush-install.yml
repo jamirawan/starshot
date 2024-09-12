@@ -1,0 +1,5 @@
+command:
+  site:
+    install:
+      options:
+        db-url: 'sqlite://db.sqlite'
