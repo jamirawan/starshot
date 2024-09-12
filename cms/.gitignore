@@ -1,8 +1,7 @@
 /.phpunit.result.cache
 /composer.lock
 /patches.lock.json
-/vendor
-/web
+
 
 # gitignore template for Drupal 8 projects
 #
