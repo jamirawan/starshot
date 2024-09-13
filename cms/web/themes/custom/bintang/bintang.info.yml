@@ -1,0 +1,22 @@
+name: bintang
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - bintang/base
+  - bintang/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - bintang/user
+  core/drupal.dropbutton:
+    - bintang/dropbutton
+  core/drupal.dialog:
+    - bintang/dialog
+  file/drupal.file:
+    - bintang/file
+  core/drupal.progress:
+    - bintang/progress
+description: ''
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.3.4'
